@@ -1,4 +1,5 @@
 alias a=alias
+alias c='clear;git branch;git status'
 alias uu='apt update; apt upgrade'
 alias ll='pwd;ls -l'
 alias l='pwd;ls -al'
