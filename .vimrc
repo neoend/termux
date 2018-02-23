@@ -48,3 +48,7 @@ Plugin 'cscope.vim'
 call vundle#end()
 "----------------- vundle ----------------
 
+"fixed vimdiff E97 cannot create diff file error
+"sdiff
+"pkg install diffutils
+
