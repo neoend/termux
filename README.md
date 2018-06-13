@@ -7,7 +7,7 @@ $ pwd
 
 .bash_profile
 
-external storage 접근  
+## external storage 접근  
 https://termux.com/storage.html
 ~~~sh
 $ termux-setup-storage
@@ -19,17 +19,36 @@ It's possible to create the symlink to storage manually:
 $ ln -s /storage/emulated/0 storage
 ~~~
 
-SSH 서버
+## SSH 서버
 ~~~sh
 $ pkg install dropbear
 ~~~
 ~/.ssh/authorized_keys 에 private key 추가하면 login 없이 접속 가능.
 
-HTTPD  
+## HTTPD  
 http://redmine.lighttpd.net/projects/lighttpd/wiki/TutorialConfiguration
 ~~~sh
 $ pkg install lighttpd
 ~~~
+~~~sh
+server.document-root = "/data/data/com.termux/files/home/www" 
+
+server.port = 8080
+
+server.username = "www" 
+server.groupname = "www" 
+
+mimetype.assign = (
+  ".html" => "text/html", 
+  ".txt" => "text/plain",
+  ".jpg" => "image/jpeg",
+  ".png" => "image/png" 
+)
+
+static-file.exclude-extensions = ( ".fcgi", ".php", ".rb", "~", ".inc" )
+index-file.names = ( "index.html" )
+~~~
+
 
 How To Install Metasploit-Framework In Android via Termux [Without Root](Termux-tutorial:#11)  
 https://www.youtube.com/watch?v=yn9T4M0IpSc
