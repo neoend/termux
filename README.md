@@ -18,7 +18,7 @@ $ pwd
 /data/data/com.termux/files/home
 ~~~
 
-.bash_profile
+
 
 ## external storage 접근  
 https://termux.com/storage.html
