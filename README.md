@@ -38,6 +38,14 @@ $ pkg install dropbear
 ~~~
 ~/.ssh/authorized_keys 에 private key 추가하면 login 없이 접속 가능.
 
+no supported authentication methods available 에러가 발생할 경우
+https://superuser.com/questions/310522/disconnected-no-supported-authentication-methods-available
+~~~sh
+chmod g-w ~/
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/authorized_keys
+~~~
+
 ## JAVA
 ~~~sh
 $ dpkg -i openjdk9_9.2017.8.20_aarch64.deb
