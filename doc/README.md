@@ -11,5 +11,5 @@ DUMP OF SERVICE backup:
 Permission Denial: can't dump BackupManagerService from from pid=15581, uid=10131 due to missing android.permission.DUMP permission
 ...
 ~~~
-Only system app can have DUMP permission. :)
+Only system app can have DUMP permission. :(
 
