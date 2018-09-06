@@ -1,61 +1,15 @@
-# termux
-
-~~~sh
-$ pwd
-/data/data/com.termux/files/home
+## /system/bin
 ~~~
-
-.bash_profile
-
-## external storage 접근  
-https://termux.com/storage.html
-~~~sh
-$ termux-setup-storage
+$ cd /system/bin
+$ ./dumpsys
+CANNOT LINK EXECUTABLE "./dumpsys": cannot locate symbol "XzUnpacker_Construct" referenced by "/system/lib64/libunwind.so"...
+Aborted
+$ export LD_LIBRARY_PATH=/system/lib64:$LD_LIBRARY_PATH
+$ ./dumpsys
+...
+DUMP OF SERVICE backup:
+Permission Denial: can't dump BackupManagerService from from pid=15581, uid=10131 due to missing android.permission.DUMP permission
+...
 ~~~
+Only system app can have DUMP permission. :)
 
-https://github.com/termux/termux-app/issues/449  
-It's possible to create the symlink to storage manually:
-~~~sh
-$ ln -s /storage/emulated/0 storage
-~~~
-
-## SSH 서버
-~~~sh
-$ pkg install dropbear
-~~~
-~/.ssh/authorized_keys 에 private key 추가하면 login 없이 접속 가능.
-
-## HTTPD  
-http://redmine.lighttpd.net/projects/lighttpd/wiki/TutorialConfiguration
-~~~sh
-$ pkg install lighttpd
-~~~
-~~~sh
-server.document-root = "/data/data/com.termux/files/home/www" 
-
-server.port = 8080
-
-server.username = "www" 
-server.groupname = "www" 
-
-mimetype.assign = (
-  ".html" => "text/html", 
-  ".txt" => "text/plain",
-  ".jpg" => "image/jpeg",
-  ".png" => "image/png" 
-)
-
-static-file.exclude-extensions = ( ".fcgi", ".php", ".rb", "~", ".inc" )
-index-file.names = ( "index.html" )
-~~~
-
-
-How To Install Metasploit-Framework In Android via Termux [Without Root](Termux-tutorial:#11)  
-https://www.youtube.com/watch?v=yn9T4M0IpSc
-
-
-https://stackoverflow.com/questions/36539308/is-it-possible-to-install-the-jdk-on-an-android-device
-
-busy box
-/data/data/ru.meefik.busybox/files/bin
-export PATH=/data/data/ru.meefik.busybox/files/bin:$PATH
