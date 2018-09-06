@@ -13,3 +13,15 @@ Permission Denial: can't dump BackupManagerService from from pid=15581, uid=1013
 ~~~
 Only system app can have DUMP permission. :(
 
+
+## clang
+~~~
+clang/stable 6.0.1 aarch64
+  C language frontend for LLVM
+
+libclang/stable 6.0.1 aarch64
+  C language frontend library for LLVM
+
+libclang-dev/stable 6.0.1 aarch64
+  C language frontend library for LLVM
+~~~
