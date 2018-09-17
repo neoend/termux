@@ -25,3 +25,16 @@ libclang/stable 6.0.1 aarch64
 libclang-dev/stable 6.0.1 aarch64
   C language frontend library for LLVM
 ~~~
+
+## nmap
+~~~
+$ pkg install openssl
+$ pkg install nmap
+$ nmap -sS -p 1-65535 127.0.0.1
+You requested a scan type which requires root privileges.
+QUITTING!
+$ pkg install tsu
+$ tsu
+/data/data/com.termux/files/usr/bin/tsu: 139: exec: : Permission denied
+$ 
+~~~
