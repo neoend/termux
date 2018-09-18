@@ -40,4 +40,4 @@ $
 ~~~
 Rooting is required for tsu.
 
-chroot? or proot?
+[PRoot](https://wiki.termux.com/wiki/PRoot)
