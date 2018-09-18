@@ -38,3 +38,6 @@ $ tsu
 /data/data/com.termux/files/usr/bin/tsu: 139: exec: : Permission denied
 $ 
 ~~~
+Rooting is required for tsu.
+
+chroot? or proot?
