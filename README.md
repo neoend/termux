@@ -47,6 +47,7 @@ chmod 600 ~/.ssh/authorized_keys
 ~~~
 
 ## JAVA
+https://archive.org/details/openjdk-9-jre-headless_9.2017.8.20-1_x86_64
 ~~~sh
 $ dpkg -i openjdk9_9.2017.8.20_aarch64.deb
 ~~~
