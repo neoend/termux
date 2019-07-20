@@ -48,6 +48,11 @@ chmod 600 ~/.ssh/authorized_keys
 
 ## JAVA
 https://archive.org/details/openjdk-9-jre-headless_9.2017.8.20-1_x86_64
+pkg dependency가 발생해서 추가 패키지 설치가 필요할 경우
+~~~sh
+$ apt --fix-broken install
+~~~
+
 ~~~sh
 $ dpkg -i openjdk9_9.2017.8.20_aarch64.deb
 ~~~
