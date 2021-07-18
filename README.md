@@ -17,7 +17,20 @@ Learn more:        pkg help
 $ pwd
 /data/data/com.termux/files/home
 ~~~
+20210718
+~~~sh
+Working with packages:
 
+ * Search packages:   pkg search <query>
+ * Install a package: pkg install <package>
+ * Upgrade packages:  pkg upgrade
+
+Subscribing to additional repositories:
+
+ * Root:     pkg install root-repo
+ * Unstable: pkg install unstable-repo
+ * X11:      pkg install x11-repo
+~~~
 
 
 ## external storage 접근  
