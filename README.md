@@ -1,11 +1,12 @@
 # termux
 
-20210718
+
 설치 후 다음 실행
 ~~~sh
 apt update
 apt upgrade
 ~~~
+20210718
 ~~~sh
 Working with packages:
 
