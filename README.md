@@ -1,5 +1,24 @@
 # termux
 
+20210718
+설치 후 다음 실행
+~~~sh
+apt update
+apt upgrade
+~~~
+~~~sh
+Working with packages:
+
+ * Search packages:   pkg search <query>
+ * Install a package: pkg install <package>
+ * Upgrade packages:  pkg upgrade
+
+Subscribing to additional repositories:
+
+ * Root:     pkg install root-repo
+ * Unstable: pkg install unstable-repo
+ * X11:      pkg install x11-repo
+~~~
 ~~~sh
 Welcome to Termux!
 
@@ -16,20 +35,6 @@ Learn more:        pkg help
 
 $ pwd
 /data/data/com.termux/files/home
-~~~
-20210718
-~~~sh
-Working with packages:
-
- * Search packages:   pkg search <query>
- * Install a package: pkg install <package>
- * Upgrade packages:  pkg upgrade
-
-Subscribing to additional repositories:
-
- * Root:     pkg install root-repo
- * Unstable: pkg install unstable-repo
- * X11:      pkg install x11-repo
 ~~~
 
 
